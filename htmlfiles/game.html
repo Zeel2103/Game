@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/Styles/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+    <script src="/JS/chooseword.mjs" defer> </script>
+    <!--The above links are for the css stylesheet, the font library and the javascript files. -->
+</head>
+
+<body>
+    <h1> HANGMAN </h1>
+    <nav>
+        <!-- The nav links are below. The class "active" means that the webpage that the user is currently on will be active and coloured in the nav section.-->
+        <a href="/index.html"> Home </a>
+        <a href="registration.html"> Registration </a>
+        <a href="login.html"> Login </a>
+        <a class="active" href="game.html"> Game </a>
+        <a href="ranking.html"> Ranking </a>
+    </nav>
+
+    <div class="container3"> <!-- This div section has the game functionality all contained in a box.-->
+
+        <img src="/Images/hangman0.jpg" alt="Picture of hangman base" style="float:right" id="hangmanImage">
+
+        <div class="theme">
+            <!-- For the themes there is a dropdown menu below which contains the 3 themes that the user can choose. -->
+            <label for="theme">Choose a theme:</label>
+            <select id="theme">
+                <option value="countries">Countries</option>
+                <option value="capitalCities">Capital Cities</option>
+                <option value="sports">Sports</option>
+            </select>
+        </div>
+        <p id="Feedback"></p>
+
+        <!-- The button below allows users to get a new word and play the game. -->
+        <button class="button1" onclick="startGame()">Press button for new word</button>
+        <!-- The id word-display displays the random word that has been chosen as underscores. -->
+        <p id="word-display"></p>
+        <!-- The score below displays and keeps track for the users how many words they have guessed correctly. -->
+        <p id="score"> Score = 0</p>
+        <!-- The id incorrect guesses below displays and keeps track of how many letters have been guessed incorrectly, 
+         it also lets the users know that they have 5 attempts to guess the word correctly. -->
+        <p id="incorrectGuesses"> IncorrectGuesses = 0/5</p>
+        <!-- The id below displays what the word is if the user has used up all the attempts. -->
+        <p id="rightGuess"> </p>
+        <p id="wrongGuess"> </p>
+        <!-- The div below displays the keyboard of buttons so the user can choose a letter. -->
+        <div class="keyboard">
+            <button class="letter-button" onclick="checkletter(this, 'a')"> a </button>
+            <button class="letter-button" onclick="checkletter(this, 'b')"> b </button>
+            <button class="letter-button" onclick="checkletter(this, 'c')"> c </button>
+            <button class="letter-button" onclick="checkletter(this, 'd')"> d </button>
+            <button class="letter-button" onclick="checkletter(this, 'e')"> e </button>
+            <button class="letter-button" onclick="checkletter(this, 'f')"> f </button>
+            <button class="letter-button" onclick="checkletter(this, 'g')"> g </button>
+            <button class="letter-button" onclick="checkletter(this, 'h')"> h </button>
+            <button class="letter-button" onclick="checkletter(this, 'i')"> i </button>
+            <button class="letter-button" onclick="checkletter(this, 'j')"> j </button>
+            <button class="letter-button" onclick="checkletter(this, 'k')"> k </button>
+            <button class="letter-button" onclick="checkletter(this, 'l')"> l </button>
+            <button class="letter-button" onclick="checkletter(this, 'm')"> m </button>
+            <button class="letter-button" onclick="checkletter(this, 'n')"> n </button>
+            <button class="letter-button" onclick="checkletter(this, 'o')"> o </button>
+            <button class="letter-button" onclick="checkletter(this, 'p')"> p </button>
+            <button class="letter-button" onclick="checkletter(this, 'q')"> q </button>
+            <button class="letter-button" onclick="checkletter(this, 'r')"> r </button>
+            <button class="letter-button" onclick="checkletter(this, 's')"> s </button>
+            <button class="letter-button" onclick="checkletter(this, 't')"> t </button>
+            <button class="letter-button" onclick="checkletter(this, 'u')"> u </button>
+            <button class="letter-button" onclick="checkletter(this, 'v')"> v </button>
+            <button class="letter-button" onclick="checkletter(this, 'w')"> w </button>
+            <button class="letter-button" onclick="checkletter(this, 'x')"> x </button>
+            <button class="letter-button" onclick="checkletter(this, 'y')"> y </button>
+            <button class="letter-button" onclick="checkletter(this, 'z')"> z </button>
+        </div>
+
+        <!-- The button below allows users to log out and then another player can play by logging in.-->
+        <button id="logout" class="button1" onclick="logout()"> Log out </button>
+
+    </div>
+</body>
+
+</html>

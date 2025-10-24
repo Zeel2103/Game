@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/Styles/styles.css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+    <script src="/JS/login.mjs" defer> </script>
+<!--The above links are for the css stylesheet, the font library and the javascript files. -->
+</head>
+<body>
+    <h1> HANGMAN </h1>
+    <nav>
+        <!-- The nav links are below. The class "active" means that the webpage that the user is currently on will be active and coloured in the nav section.-->
+        <a href="/index.html"> Home </a>
+        <a href="registration.html"> Registration </a>
+        <a class="active" href="login.html"> Login </a>
+        <a href="game.html"> Game </a>
+        <a href="ranking.html"> Ranking </a>
+    </nav>
+    
+    <div class="container2"> <!-- The input fields in this div section are put in a box.  -->
+        <h2> Login: </h2>
+        <!-- The input fields each have a type specified that allows the user to enter in that field.  -->
+        Name: <input type="text" id="NameInput" value="">
+        <br> </br>
+        Password: <input type="password" id="PasswordInput" value="">
+        <br> </br>
+        <!-- The button below allows users to log in and play the game.  -->
+        <button class = "button1" onclick="login()"> Login </button>    
+        <p id="Feedback"></p>
+
+    </div>
+
+</body>
+</html>

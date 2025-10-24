@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/Styles/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+    <script src="/JS/register.mjs" defer> </script>
+    <!--The above links are for the css stylesheet, the font library and the javascript files. -->
+</head>
+
+<body>
+    
+    <h1> HANGMAN </h1>
+    <nav> 
+        <!-- The nav links are below. The class "active" means that the webpage that the user is currently on will be active and coloured in the nav section.-->
+        <a href="/index.html"> Home </a>
+        <a class="active" href="registration.html"> Registration </a>
+        <a href="login.html"> Login </a>
+        <a href="game.html"> Game </a>
+        <a href="ranking.html"> Ranking </a>
+        
+    </nav>
+
+    <div class="container1"> <!-- The input fields in this div section are put in a box.  -->
+        <h2> Register your details on this page </h2>
+        <!-- The input fields each have a type specified that allows the user to enter in that field and the data will be stored in the values.  -->
+        Name: <input type="text" id="NameInput" value="">
+        <br> </br>
+        Password: <input type="password" id="PasswordInput" value="">
+        <br> </br>
+        Age: <input type="number" id="AgeInput" min="7" max="100">
+        <br> </br>
+        Email: <input type="email" id="EmailInput" value="">
+        <!-- The div below will display if the password entered is strong or not by validating using javascript. -->
+        <div class="password-strength" id="passwordStrength"></div>
+        <!-- The button below allows the users to register their details which stores it in local storage.  -->
+        <button class = "button1" onclick="register()"> Register </button>
+        <p id="Feedback"></p>
+    </div>
+</body>
+
+</html>

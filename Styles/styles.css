@@ -1,0 +1,207 @@
+body {
+  background-image: url("background2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/* The background image above is applied to all webpages. */
+
+h1 {
+  text-align: center;
+  color: #804580fa;
+  font-family: "bungee shade";
+  font-size: 390%;
+  src: url(sansation_light.woff);
+}
+/* Styling for the heading of the website name.*/
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 1px;
+  font-size: 200%;
+  text-align: center;
+}
+/* The styling for the nav so each link is spaced out evenly. */
+
+a {
+  color: #6c3d6a;
+  border: 2px solid rgb(0, 0, 0);
+}
+/* The colour for the nav text and border. */
+
+a:hover {
+  color: #b30b61;
+}
+/* The a:hover background colour shows what page the user is hovering on so they can click on the correct link. */
+
+.active {
+  background-color:  #abc6e5b6;
+}
+/* The .active background colour shows what page the user is on by highlighting the weblink. */
+
+
+h2, p, a {
+  font-family: boogaloo;
+  src: url(sansation_light.woff);
+  text-align: center;
+}
+/* The same fonts applied to each paragraph. */
+
+.theme {
+  font-size: 150%;
+}
+/*CSS for the theme*/
+
+#word-display {
+  font-size: 300%;
+} /* The format of the word display*/
+
+
+.Picture of hangman {
+  position: relative;
+  right: 30px;
+} /*  The hangman picture.  */
+
+.container {
+  position: absolute;
+  margin: 150px;
+  padding-top: 1px;
+  padding-right: 30px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  top: 42%;
+  left: 40%;
+  text-align: justify;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(157, 154, 220);
+  background-color: #abc6e5b6;
+} /* Container for the index page information. */
+
+.container1 {
+  position: absolute;
+  margin: 110px;
+  max-width: 500px;
+  padding-top: 1px;
+  padding-right: 30px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  top: 55%;
+  left: 42%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(157, 154, 220);
+  background-color: #abc6e5b6;
+}
+/* The container is the box that has the input fields in it so it stands out from the background page and the user can navigate it easily. */
+
+
+.container2 {
+  position: absolute;
+  margin: 1px;
+  max-width: 300px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+  font-size: 130%;
+  border: 3px solid rgb(157, 154, 220);
+  background-color: #abc6e5b6;
+} /* Container for the login details input */
+
+.container3 {
+  position: absolute;
+  margin: 1px;
+  max-width: 800px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  top: 40%;
+  left: 17%;
+  text-align: center;
+  border: 3px solid rgb(157, 154, 220);
+  background-color: #abc6e5b6;
+} /* Container for the Game display. */
+
+
+input[type=text], input[type=password], input[type=email] {
+  width: 60%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 3px solid rgb(0, 0, 0);
+  background: #f1f1f1;
+} /* CSS for Input field boxes. */
+
+input[type=number] {
+  width: 20%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border: 3px solid rgb(0, 0, 0);
+  background: #f1f1f1;
+}  /* CSS for Input field boxes. */
+
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}  /* CSS for Input field boxes. */
+
+.button1 {
+  font-family: boogaloo;
+  font-size: 150%;
+  src: url(sansation_light.woff);
+} /* CSS for the logout button */
+
+
+
+
+div {
+  font-family: boogaloo;
+  src: url(sansation_light.woff);
+} /* CSS fonts for div elements. */
+
+
+table,
+th,
+td {
+  border: solid black;
+  font-size: 120%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #abc6e558;
+} /* CSS for ranking table */
+
+
+.keyboard button {
+  display: inline-block;
+  background-color: rgb(154, 172, 232);
+  border: 1px solid rgb(158, 82, 129);
+  border-radius: 5px;
+  outline: 10px;
+  color: rgb(0, 0, 0);
+  padding: 15px 20px;
+  text-align: center;
+  margin: 2px;
+  font-family: boogaloo;
+  font-size: 175%;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+} /* CSS for letter keyboard buttons. */
+
+.keyboard button:hover {
+  background-color: rgb(212, 220, 248);
+} /* CSS for keyboard button hover. */
+
+.keyboard button[disabled] {
+  pointer-events: none;
+  opacity: 0.4;
+} /* CSS for keyboard buttons when they are disabled. */
+
+
